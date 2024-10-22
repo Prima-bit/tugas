@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C5E3FF; /* Latar belakang halaman */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #66B2FF; /* Header */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px; /* Padding untuk mengotaki dengan sempurna */
+    transition: transform 0.3s, background-color 0.3s; /* Animasi smooth */
+    border-radius: 5px; /* Sudut melengkung */
+}
+
+nav ul li a:hover {
+    background-color: #FFD700; /* Background emas saat hover */
+    color: #000; /* Ubah teks menjadi hitam saat hover */
+    transform: scale(1.1); /* Zoom-in saat hover */
+    border: 2px solid #FFD700; /* Border emas */
+}
+
+/* Style the content */
+div {
+    background-color: #FFFFFF; /* Latar belakang konten */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan sedikit bayangan */
+}
+
+/* Style the footer */
+footer {
+    background-color: #66B2FF; /* Footer */
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Media Queries untuk layar kecil (ponsel) */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Navigasi menumpuk secara vertikal */
+        margin-bottom: 10px; /* Beri jarak antar item menu */
+    }
+
+    header {
+        padding: 10px; /* Kurangi padding pada layar kecil */
+    }
+
+    div {
+        padding: 10px; /* Kurangi padding konten pada layar kecil */
+        margin: 10px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-size: 16px; /* Perkecil ukuran teks menu pada layar kecil */
+    }
+
+    footer {
+        padding: 10px; /* Kurangi padding footer pada layar kecil */
+    }
+}
